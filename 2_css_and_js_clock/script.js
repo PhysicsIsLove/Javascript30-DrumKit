@@ -39,7 +39,6 @@ let intervalId = setInterval(()=>{
     let rotationMatrixHour = new DOMMatrixReadOnly();
     let rotationMatrixMinute = new DOMMatrixReadOnly();
     let rotationMatrixSecond = new DOMMatrixReadOnly();
-    // debugger
     console.log("before rotation ", rotationMatrixHour);
     rotationMatrixHour.rotate(hrsDeg, 'deg');
     console.log("After rotation ", rotationMatrixHour);
