@@ -3,35 +3,48 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url("photos/background.jpg");
+    background-size: cover;
 }
 
 .clock-face{
     height: 250px;
     width: 250px;
-    border: 20px solid red;
+    border: 20px solid rgb(255, 254, 196);
     border-radius: 50%;
+    position: relative;
+    background-color: rgb(0,0,0,0.4);
 }
 
 .hour-hand{
-    width: 80px;
+    position: absolute;
+    width: 70px;
     height: 5px;
-    background-color: black;
-    transform: translate(42px, 123px) rotate(37deg);
-    transform-origin: 80px;    
+    top: 50%;
+    left: 50%;
+    background-color: rgb(255, 144, 144);
+    transform: rotate(0deg);
+    transform-origin: 0%;   
 }
 .minute-hand{
-    width: 110px;
+    position: absolute;
+    width: 105px;
     height: 4px;
+    top: 50%;
+    left: 50%;
     background-color: rgb(17, 174, 35);
-    transform: translate(9px, 113px) rotate(90deg);
-    transform-origin: 110px;    
+    transform: rotate(0deg);
+    transform-origin: 0%; 
 }
 
 .second-hand{
-    width: 95px;
+    position: absolute;
+    width: 90px;
     height: 2px;
+    top: 50%;
+    left: 50%;
     background-color: rgb(201, 1, 1);
-    transform: translate(27px, 111px) rotate(90deg);
-    transform-origin: 95px;    
+    transform: rotate(0deg);
+    transform-origin: 0%;   
 
 }
